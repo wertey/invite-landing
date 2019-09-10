@@ -17,5 +17,11 @@
   }
   &::placeholder {
     color: $color-black-russian;
+    opacity: 1; transition: opacity 0.3s ease;
+    font-weight: bold;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 }

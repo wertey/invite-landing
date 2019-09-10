@@ -40,4 +40,53 @@
       }
     }
   }
+  &-form {
+    &-submit {
+      padding-top: 22px;
+    }
+    &-submit__link {
+      color: $color-flamingo;
+      text-decoration: underline;
+      font-family: 'Poppins Bold', sans-serif;
+      font-weight: bold;
+      transition: color .3s ease-in;
+      &:hover {
+        color: #ea6c56;
+      }
+    }
+    &-submit__text {
+      padding-left: 20px;
+      font-family: 'Poppins Regular', sans-serif;
+    }
+    &-submit__btn {
+      background: $color-flamingo;
+      min-width: 220px;
+      height: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      color: $color-white;
+      cursor: pointer;
+      border-radius: 16px;
+      padding: 0 15px;
+      text-align: center;
+      font-family: 'Poppins Medium', sans-serif;
+      transition: background .3s ease-in;
+      &:hover {
+        background: #ea6c56;
+      }
+    }
+    &__link {
+      font-weight: bold;
+      font-family: 'Poppins Bold', sans-serif;
+      color: $color-black-russian;
+      transition: color .3s ease-in;
+      &:hover {
+        color: rgba($color-black-russian,.7);
+      }
+    }
+    &__label {
+      padding-left: 20px;
+      font-family: 'Poppins Regular', sans-serif;
+    }
+  }
 }
