@@ -1,0 +1,21 @@
+.input {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  background: $color-buttery-white;
+  border:none;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 26px;
+  padding-right: 26px;
+  line-height: 1px;
+  padding-top: 5px;
+  color: $color-black-russian;
+  font-family: 'Poppins Bold', sans-serif;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $color-black-russian;
+  }
+}
