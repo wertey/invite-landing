@@ -1,3 +1,28 @@
 .checkbox {
+  display: none;
+  &:checked + &-fake:after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: $color-flamingo;
+    border-radius: 50%;
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &-fake {
+    width: 20px;
+    height: 20px;
+    background: $color-white;
+    border: 1px solid rgba(194,194,194,.4);
+    box-shadow: 1px 1px 0 rgba(14,15,33,.07);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    &:after {
 
+    }
+  }
 }

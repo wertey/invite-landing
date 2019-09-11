@@ -1,6 +1,6 @@
 .lp-information {
   background: url(/assets/img/people.png)no-repeat;
-  background-position: top left;
+  background-position: -100px;
   &-row {
     width: 50%;
     margin-left: auto;
@@ -87,6 +87,9 @@
     &__label {
       padding-left: 20px;
       font-family: 'Poppins Regular', sans-serif;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
     }
   }
 }
