@@ -1,3 +1,122 @@
 .lp-advantages {
+  color: $color-black-russian;
+  margin-top: 150px;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    &-cards {
+      width: 500px;
+      position: relative;
+      &__item {
+        cursor: pointer;
+        background: $color-white;
+        color: $color-black-russian;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 6px 9px 35px rgba(25,40,66,.1);
+        max-width: 211px;
+        padding: 65px 30px 35px;
+        position: relative;
+        min-height: 300px;
+        transition: all .3s ease-in;
+        z-index: 99;
+        margin-bottom: 61px;
+        &_right {
+          margin-left: auto;
+          position: absolute;
+          right: 7px;
+          top: 150px;
+        }
+        &-circle {
+          position: absolute;
+          width: 76px;
+          height: 76px;
+          background-color: rgba($color-flamingo, .2);
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          left: -23px;
+          top: -29px;
+          z-index: 100;
+          &:after {
+            background-image: url(/assets/img/flowers.png);
+            position: absolute;
+            content: '';
+            width: 60px;
+            border-radius: 50%;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 8px;
+            top: 8px;
+            background-color: $color-flamingo;
+          }
+        }
+        &-title {
+          font-family: 'Poppins Bold', sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+        &-content {
+          font-size: 14px;
+          line-height: 24px;
+          font-family: 'Poppins Regular', sans-serif;
+        }
+        &-readmore {
+          position: relative;
+          display: flex;
+          margin-top: auto;
+          transition: position .3s ease-in-out;
+        }
+        &:hover {
+          background: $color-flamingo;
+          color: $color-white;
+        }
+      }
+    }
+    &-about {
+      width: 550px;
+      &__title {
+        color: $color-flamingo;
+        margin-top: 40px;
+      }
+      &__text {
+        font-family: 'Poppins Light', sans-serif;
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 36px;
+      }
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        &__toggle {
+          width: 165px;
+          height: 46px;
+          padding: 0 20px;
+          line-height: 46px;
+          font-size: 14px;
+          font-weight: 400;
+          background-color: $color-white;
+          border-radius: 20px;
+          text-align: center;
+          cursor: pointer;
+          transition: all .3s ease-in;
+          &:hover {
+            background: $color-flamingo;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
 
+
+.lp-advantages-row-cards__item:hover .lp-advantages-row-cards__item-readmore {
+  right: 30px;
+  bottom: 35px;
+  position: absolute;
 }
