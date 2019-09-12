@@ -1,14 +1,30 @@
 .lp-information {
   background: url(/assets/img/people.png)no-repeat;
   background-position: -100px;
+  @media screen and (max-width: 1199px) {
+    & {
+      background-position: 0;
+      background-size: 43%;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    & {
+      background-position: top center;
+      background-size: 70%;
+      padding-top: 450px;
+    }
+  }
   &-row {
     width: 50%;
     margin-left: auto;
+    @media screen and (max-width: 1023px) {
+      & {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
     &__further {
       color: $color-black-russian;
-      &-title {
-
-      }
       &-text {
         font-size: 16px;
         font-family: 'Poppins Regular', sans-serif;
