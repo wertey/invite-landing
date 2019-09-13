@@ -9,11 +9,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: 639px) {
+      & {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
     &__promises {
+      @media screen and (max-width: 639px) {
+        & {
+          margin-top: 40px;
+          margin-bottom: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
       &-nums {
         font-family: 'Poppins Bold', sans-serif;
         font-weight: bold;
         font-size: 20px;
+        @media screen and (max-width: 639px) {
+          & {
+            margin-top: 10px;
+          }
+        }
       }
       &-text {
         font-family: 'Poppins Light', sans-serif;
@@ -37,6 +59,11 @@
         justify-content: flex-start;
         align-items: center;
         box-shadow: 3px 5px 7px -9px rgba(0,0,0,0.75);
+        @media screen and (max-width: 639px) {
+          & {
+            left: -56px;
+          }
+        }
         &:after {
           top: 99%;
           left: 49px;
@@ -50,6 +77,11 @@
           border-top-color: $color-white;
           border-width: 9px;
           margin-left: -20px;
+          @media screen and (max-width: 639px) {
+            & {
+              left: 86px;
+            }
+          }
         }
         &_bold {
           font-weight: bold;
@@ -69,10 +101,26 @@
       &-left {
         top: 70px;
         left: 10%;
+        @media screen and (max-width: 639px) {
+          & {
+            top: -27px;
+            left: -2%;
+          }
+        }
+        @media screen and (max-width: 374px) {
+          & {
+            top: -53px;
+          }
+        }
       }
       &-right {
         top: 45px;
         right: 10%;
+        @media screen and (max-width: 639px) {
+          & {
+            right: -1px;
+          }
+        }
       }
     }
     &__title {
@@ -82,6 +130,11 @@
       max-width: 630px;
       font-weight: bold;
       text-align: center;
+      @media screen and (max-width: 639px) {
+        & {
+          font-size: 24px;
+        }
+      }
     }
     &__text {
       font-size: 20px;
@@ -94,13 +147,29 @@
       justify-content: center;
       flex-direction: row;
       margin-top: 35px;
+      @media screen and (max-width: 639px) {
+        & {
+          flex-direction: column;
+        }
+      }
       &-left {
         text-align: right;
         flex: 1;
+        @media screen and (max-width: 639px) {
+          & {
+            text-align: center;
+          }
+        }
       }
       &-right {
         text-align: left;
         flex: 1;
+        @media screen and (max-width: 639px) {
+          & {
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
       }
       &-img {
         width: 100px;
@@ -112,6 +181,12 @@
         background-position: center;
         border-radius: 100%;
         position: relative;
+        @media screen and (max-width: 639px) {
+          & {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
+        }
         &:after {
           position: absolute;
           content: '+';
@@ -141,6 +216,11 @@
         font-weight: bold;
         font-family: 'Poppins Bold', sans-serif;
         margin-top: 25px;
+        @media screen and (max-width: 639px) {
+          & {
+            margin-top: 7px;
+          }
+        }
       }
     }
     &__desc {
@@ -157,6 +237,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 800px) {
+          & {
+            background-image: url(/assets/img/scroll768.png);
+            background-repeat: no-repeat;
+            width: 646px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          & {
+            display: none;
+          }
+        }
         &-text {
           font-family: 'Poppins Medium', sans-serif;
           font-size: 18px;
