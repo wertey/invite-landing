@@ -163,6 +163,8 @@
           height: 46px;
           padding: 0 20px;
           line-height: 46px;
+          text-decoration: none;
+          color: $color-black-russian;
           font-size: 14px;
           font-weight: 400;
           background-color: $color-white;
@@ -179,6 +181,12 @@
             background: $color-flamingo;
             color: $color-white;
           }
+        }
+      }
+      &-item {
+        display: none;
+        &:first-child {
+          display: block;
         }
       }
     }
